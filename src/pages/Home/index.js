@@ -16,13 +16,15 @@ const Home = ({navigation}) => {
   const transaction = useSelector((state) => state.transaction);
   const loading = transaction.dataTransactionLoading;
   const dataTransactionSuccess = transaction.dataTransactionSuccess;
-  const [listTransaction, setlistTransaction] = useState(dataTransactionSuccess);
+  const [listTransaction, setlistTransaction] = useState(dataTransactionSuccess || []);
   const [modalFilter, setmodalFilter] = useState(false);
   const [filterindex, setfilterindex] = useState(0);
 
   useEffect(() => {
     dispatch(didTransaction());
   }, []);
+
+  console.log(transaction);
 
   function filterTransaction(keyword) {
     let filteredData = dataTransactionSuccess.filter(
