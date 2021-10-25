@@ -24,8 +24,6 @@ const Home = ({navigation}) => {
     dispatch(didTransaction());
   }, []);
 
-  console.log(transaction);
-
   function filterTransaction(keyword) {
     let filteredData = dataTransactionSuccess.filter(
       (item, index) =>

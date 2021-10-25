@@ -16,7 +16,7 @@ export function* getTransactionFlow() {
       });
       yield put(didTransactionSuccess(data));
     } catch (error) {
-      console.log((error.response && error.response.data) || error.message);
+      // console.log((error.response && error.response.data) || error.message);
       const {message} = (error.response && error.response.data) || error.message;
       showError(message);
       yield put(didTransactionFailed(message));

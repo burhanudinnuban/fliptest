@@ -7,7 +7,7 @@ import {IMGFlip} from '../../assets/images';
 const Splash = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate('Home');
+      navigation.replace('Home');
     }, 1000);
   }, []);
 
