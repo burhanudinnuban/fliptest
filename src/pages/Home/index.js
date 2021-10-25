@@ -38,13 +38,13 @@ const Home = ({navigation}) => {
   function filterModal(keyword) {
     let filteredData = [];
     if (keyword === 1) {
-      filteredData = dataTransactionSuccess.sort((a, b) => a.beneficiary_name.localeCompare(b.beneficiary_name));
+      filteredData = listTransaction.sort((a, b) => a.beneficiary_name.localeCompare(b.beneficiary_name));
     } else if (keyword === 2) {
-      filteredData = dataTransactionSuccess.sort((a, b) => b.beneficiary_name.localeCompare(a.beneficiary_name));
+      filteredData = listTransaction.sort((a, b) => b.beneficiary_name.localeCompare(a.beneficiary_name));
     } else if (keyword === 3) {
-      filteredData = dataTransactionSuccess.sort((a, b) => new Date(a.completed_at) - new Date(b.completed_at));
+      filteredData = listTransaction.sort((a, b) => new Date(a.completed_at) - new Date(b.completed_at));
     } else if (keyword === 4) {
-      filteredData = dataTransactionSuccess.sort((a, b) => new Date(b.completed_at) - new Date(a.completed_at));
+      filteredData = listTransaction.sort((a, b) => new Date(b.completed_at) - new Date(a.completed_at));
     } else {
       filteredData = dataTransactionSuccess;
     }
@@ -95,9 +95,11 @@ const Home = ({navigation}) => {
           placeholder={'Cari nama, bank, atau nominal'}
           iconLeft={<ICSearchSecondary width={wp(5)} height={wp(5)} />}
           iconRight={
-            <TouchableOpacity style={pages.rowCenter} onPress={() => setmodalFilter(true)}>
-              <Text style={texts.orangeBold}>{radioProps[filterindex].label}</Text>
-              <Gap wp={4} />
+            <TouchableOpacity style={[pages.rowCenter, pages.hpwp(null, wp(25))]} onPress={() => setmodalFilter(true)}>
+              <Text numberOfLines={1} style={[texts.orangeBold]}>
+                {radioProps[filterindex].label}
+              </Text>
+              <Gap wp={2} />
               <ICArrowDown width={wp(4)} height={wp(4)} />
             </TouchableOpacity>
           }

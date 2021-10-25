@@ -29,7 +29,8 @@ const TextInputCustom = ({
   onSubmitEditing,
 }) => {
   return (
-    <View style={[pages.roundedBg(colors.white, 0, 0, 10, null, wp(96), 44), pages.row, pages.alignCenter]}>
+    <View
+      style={[pages.roundedBg(colors.white, 0, 0, 10, null, wp(96), 44), pages.rowCenterBetween, pages.alignCenter]}>
       {iconLeft ? (
         <View onPress={onPressIconLeft} style={pages.padding(0, wp(1))}>
           {iconLeft && iconLeft}
@@ -59,7 +60,7 @@ const TextInputCustom = ({
           secureTextEntry={secureTextEntry}
           onPressOut={onPressOut}
           allowFontScaling={false}
-          style={[texts.secondaryBold, pages.hpwp(null, iconRight ? wp(63) : wp(76))]}
+          style={[texts.secondaryBold, pages.hpwp(null, iconRight ? wp(55) : wp(76))]}
           placeholder={placeholder ? placeholder : 'type in here...'}
           // placeholderTextColor={placeholderTextColor ? placeholderTextColor : colors.silver}
           autoCapitalize="none"
