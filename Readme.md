@@ -1,5 +1,7 @@
 # Flip Test Code React Native
 
+### for boost start time react native i enable hermes
+
 ## Preview Video In Samsung S9 Real Device
 https://user-images.githubusercontent.com/52542094/138776376-4f6f0cf1-3759-462d-9898-ae6e4cc2b219.mp4
 
