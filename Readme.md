@@ -1,6 +1,6 @@
 # Flip Test Code React Native
 
-### for boost start time react native i enable hermes
+### I Already Enable Hermes in This App for improved start-up time, decreased memory usage, and smaller app size.
 
 ## Preview Video In Samsung S9 Real Device
 https://user-images.githubusercontent.com/52542094/138776376-4f6f0cf1-3759-462d-9898-ae6e4cc2b219.mp4
