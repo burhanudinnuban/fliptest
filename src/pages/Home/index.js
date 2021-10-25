@@ -20,8 +20,6 @@ const Home = ({navigation}) => {
   const [modalFilter, setmodalFilter] = useState(false);
   const [filterindex, setfilterindex] = useState(0);
 
-  console.log(transaction);
-
   useEffect(() => {
     setlistTransaction(dataTransactionSuccess);
   }, [dataTransactionSuccess]);
@@ -113,7 +111,7 @@ const Home = ({navigation}) => {
         />
       </View>
       <Gap hp={8} />
-      {listTransaction.length !== 0 ? (
+      {listTransaction !== undefined ? (
         <FlatList
           data={listTransaction}
           keyExtractor={(item, index) => item.id.toString()}
