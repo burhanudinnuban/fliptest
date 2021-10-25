@@ -1,5 +1,6 @@
 project.ext.envConfigFiles = [
-        debug: ".env"
+        debug: ".env",
+        release: ".env"
         ]
 
 apply plugin: "com.android.application"
