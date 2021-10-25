@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-line-arrow_light_drop_down_orange">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="line-arrow_light_drop_down_orange" data-name="line-arrow light drop down orange" clip-path="url(#clip-line-arrow_light_drop_down_orange)">
+    <path id="Path_78" data-name="Path 78" d="M203.513,255.6,8.2,60.288,62.888,5.6l250,250-250,250L8.2,450.913Z" transform="translate(505.944 89.456) rotate(90)" fill="#f37920"/>
+  </g>
+</svg>
